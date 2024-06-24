@@ -1,0 +1,102 @@
+.landpage {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-image: url("../images/landpage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  filter: contrast(90%);
+  text-align: center;
+}
+
+.land-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s ease; /* Smooth transition for the parallax effect */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+  width: 100%;
+}
+
+.land-img {
+  margin-bottom: 20px;
+}
+
+.land-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+.animate-left {
+  transition: transform 0.6s ease; /* Smooth transition for the parallax effect */
+}
+
+@media screen and (max-width: 1024px) {
+  .land-img img {
+    width: 175px;
+    height: 175px;
+    border-radius: 87.5px;
+  }
+
+  .animate-left {
+    margin: 20px;
+  }
+
+  .landpage h1 {
+    font-size: 2rem;
+  }
+
+  .landpage h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .land-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 75px;
+  }
+
+  .animate-left {
+    margin: 30px;
+  }
+
+  .landpage h1 {
+    font-size: 1.75rem;
+  }
+
+  .landpage h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .land-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+
+  .animate-left {
+    margin: 20px;
+  }
+
+  .landpage h1 {
+    font-size: 1.5rem;
+  }
+
+  .landpage h2 {
+    font-size: 1rem;
+  }
+}

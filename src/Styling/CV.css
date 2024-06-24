@@ -1,0 +1,131 @@
+.cv {
+  background-image: url("../images/cv.jpeg"); /* Replace with the path to your CV image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Adjust the height of the section as needed */
+  width: 100%; /* Ensure the section spans the entire width */
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.myCV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 110vh;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.left {
+  flex: 1; /* Allow the left div to grow to fill available space */
+  padding-right: 30px; /* Add padding to create space between left and right div */
+  background-color: #8c8c8c;
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  max-width: 200px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.right {
+  flex: 1; /* Allow the right div to grow to fill available space */
+  padding-left: 20px; /* Add padding to create space between left and right div */
+  padding-right: 30px;
+  background-color: #ffffff;
+  max-width: 90%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.line {
+  border-top: 1px solid black;
+  margin: 20px 0;
+}
+
+.education-info p {
+  margin: 5px 0;
+}
+
+.education {
+  margin-bottom: 25px;
+}
+
+.education h4 {
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .myCV {
+    max-width: 90vw;
+    padding: 20px;
+  }
+
+  .left,
+  .right {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myCV {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cv {
+    padding: 10px;
+  }
+
+  .myCV {
+    padding: 10px;
+  }
+
+  .left,
+  .right {
+    padding: 15px;
+  }
+
+  h3,
+  h4,
+  h5,
+  p {
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}
+
+.line {
+  border-top: 1px solid black;
+  margin: 20px 0;
+}
+
+.education-info p {
+  margin: 5px;
+}
+
+.education {
+  padding-right: 20px;
+  margin-bottom: 25px;
+}
+
+.education h4 {
+  padding-left: 2px;
+}
